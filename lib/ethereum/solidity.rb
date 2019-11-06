@@ -12,7 +12,7 @@ module Ethereum
 
     OUTPUT_REGEXP = /======= (\S*):(\S*) =======\s*Binary:\s*(\S*)\s*Contract JSON ABI\s*(\S*)/
 
-    def initialize(bin_path = "solc")
+    def initialize(bin_path = "solcjs")
       @bin_path = bin_path
       @args = "--bin --abi --optimize"
     end
